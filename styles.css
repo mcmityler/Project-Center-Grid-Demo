@@ -8,6 +8,7 @@
     --light-green: #d9dac8;
     --dark-green: #76886e;
     --dark-red: #7F2020;
+    --profile-background: #263124;
     --button-gap: 10px;
     --button-font-size: 1em;
 }
@@ -103,29 +104,40 @@
 .profile{
     display: grid;
     grid-template-columns: 30px 50px 1fr;
-    grid-template-rows: 30px;
-    align-content: center;
+    grid-template-rows: 1fr;
+    align-items: center;
     gap: 10px;
 
-}
-.profile button{
 }
 .notif-button{
     background-color: var(--light-color);
     border: none;
+    height: 30px;
+    border-radius: 5px;
 }
 .notif-button svg{
     width: 20px;
 }
-.profile img{
+.profile-image-background svg{
     width: 30px;
     height: 30px;
     justify-self: flex-end;
+    fill: var(--light-color);
 
 }
 .profile-name{
     
     line-height: 30px;
+    
+}
+.profile-image-background{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--profile-background);
+    display: grid;
+    place-content: center;
 }
 .welcome-message{
 
