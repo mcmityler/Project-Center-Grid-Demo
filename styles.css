@@ -5,8 +5,8 @@
 }
 :root{
     --light-color: #F6F3EB;
-    --light-green: #C9CAAC;
-    --dark-green: #869B7E;
+    --light-green: #d9dac8;
+    --dark-green: #76886e;
     --dark-red: #7F2020;
     --button-gap: 10px;
     --button-font-size: 1em;
@@ -41,12 +41,12 @@
 .main-buttons{
     display: grid;
     gap: var(--button-gap);
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .tool-buttons{
     display: grid;
     gap: var(--button-gap);
-    padding-top: 100px;
+    padding-top: 40px;
     
 }
 .main-buttons button,.tool-buttons button{
@@ -79,8 +79,14 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
 }
+.search-bar-section{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
+    padding: 20px 60px;
+}
 .search-bar{
-
+    margin-right: 60px;
 }
 .profile{
 
@@ -95,5 +101,5 @@
 
 }
 .body{
-
+ background-color: var(--light-green);
 }
