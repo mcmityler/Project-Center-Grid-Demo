@@ -65,15 +65,34 @@
     background-color: var(--dark-red);
     
 }
-button>svg{
+.main-buttons button>svg,
+.tool-buttons button>svg{
     height: var(--button-font-size);
     width: var(--button-font-size);
     fill: var(--light-color);
     padding-right: 10px;
     vertical-align:text-bottom;
 }
+
 .header{
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.search-bar{
+
+}
+.profile{
+
+}
+.notification{
+
+}
+.welcome-message{
+
+}
+.posting-buttons{
+
 }
 .body{
 
