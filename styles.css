@@ -9,6 +9,7 @@
     --dark-green: #869B7E;
     --dark-red: #7F2020;
     --button-gap: 10px;
+    --button-font-size: 1em;
 }
 .grid-container{
     display: grid;
@@ -29,7 +30,7 @@
     color: var(--light-color);
     padding: 5px;
 }
-.sidebar svg{
+.title-logo svg{
     width: 30px;
     fill: var(--light-color);
 }
@@ -49,19 +50,27 @@
     
 }
 .main-buttons button,.tool-buttons button{
-    font-size: 1em;
+    font-size: var(--button-font-size);
     font-weight: bold;
     color: var(--light-color);
     text-align: left;
-    padding-left: 20px;
+    padding: 5px 0px 5px 20px;
     background-color: transparent;
     border: none;
+
 
 }
 .main-buttons button:hover, .main-buttons button:active,
 .tool-buttons button:hover,.tool-buttons button:active{
-    background-color: var(--light-color);
+    background-color: var(--dark-red);
     
+}
+button>svg{
+    height: var(--button-font-size);
+    width: var(--button-font-size);
+    fill: var(--light-color);
+    padding-right: 10px;
+    vertical-align:text-bottom;
 }
 .header{
     
