@@ -61,9 +61,10 @@
 
 }
 .main-buttons button:hover, .main-buttons button:active,
-.tool-buttons button:hover,.tool-buttons button:active{
+.tool-buttons button:hover,.tool-buttons button:active,
+.notif-button:hover,.notif-button:active{
     background-color: var(--dark-red);
-    
+    fill: var(--light-color);
 }
 .main-buttons button>svg,
 .tool-buttons button>svg{
@@ -75,24 +76,56 @@
 }
 
 .header{
+    background-color: var(--light-color);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 1px 5px 10px var(--dark-green) ;
+    z-index: 1;
 }
 .search-bar-section{
     display: grid;
     grid-template-columns: 20px 1fr;
     gap: 20px;
-    padding: 20px 60px;
+    padding: 20px 40px;
 }
 .search-bar{
-    margin-right: 60px;
+    margin-right: 80px;
+    background-color: var(--light-green);
+    border: none;
+    border-radius: 20px;
+}
+.search-bar-button{
+    display: grid;
+    border: none;
+    background-color: var(--light-color);
 }
 .profile{
+    display: grid;
+    grid-template-columns: 30px 50px 1fr;
+    grid-template-rows: 30px;
+    align-content: center;
+    gap: 10px;
 
 }
-.notification{
+.profile button{
+}
+.notif-button{
+    background-color: var(--light-color);
+    border: none;
+}
+.notif-button svg{
+    width: 20px;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    justify-self: flex-end;
 
+}
+.profile-name{
+    
+    line-height: 30px;
 }
 .welcome-message{
 

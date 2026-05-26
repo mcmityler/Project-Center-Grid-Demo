@@ -16,6 +16,10 @@ History Button SVG: https://www.svgrepo.com/svg/535143/archive-box
 Tasks Button SVG: https://www.svgrepo.com/svg/535360/d-pad
 Communities Button SVG: https://www.svgrepo.com/svg/535364/door-open
 
-Settings Button SVG: 
+Settings Button SVG: https://www.svgrepo.com/svg/535498/microchip
 Support Button SVG: https://www.svgrepo.com/svg/535433/head-side
 Privacy Button SVG: https://www.svgrepo.com/svg/535465/key-skeleton
+
+Search Button SVG: https://www.svgrepo.com/svg/535575/point-right 
+Notification button SVG: https://www.svgrepo.com/svg/535399/flag
+Profile Image SVG: https://www.svgrepo.com/svg/535382/face-melt
