@@ -22,4 +22,4 @@ Privacy Button SVG: https://www.svgrepo.com/svg/535465/key-skeleton
 
 Search Button SVG: https://www.svgrepo.com/svg/535575/point-right 
 Notification button SVG: https://www.svgrepo.com/svg/535399/flag
-Profile Image SVG: https://www.svgrepo.com/svg/535382/face-melt
+Profile Image SVG: https://www.svgrepo.com/svg/535566/person-wave
