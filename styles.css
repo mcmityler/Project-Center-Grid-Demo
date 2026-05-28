@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 :root{
     --light-color: #F6F3EB;
@@ -16,7 +16,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 175px 1fr;
     align-content: flex-end;
     height: 100vh;
 }
@@ -157,7 +157,7 @@
 .welcome-message{
     display: grid;
     grid-template-columns: 70px 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 
 }
 .welcome-message-image-background{
@@ -176,6 +176,12 @@
     margin: auto;
     fill: var(--profile-image-color);
 
+}
+.welcome-hi{
+    align-self: flex-end;
+}
+.welcome-name{
+    font-size: 1.4em;
 }
 .posting-buttons{
 
