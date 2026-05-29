@@ -8,6 +8,7 @@
     --light-green: #d9dac8;
     --dark-green: #76886e;
     --dark-red: #7F2020;
+    --button-active-red: #4b1414;
     --profile-background-color: #9b1887;
     --profile-image-color: #098109;
     --sidebar-button-gap: 10px;
@@ -64,11 +65,15 @@
 
 
 }
-.main-buttons button:hover, .main-buttons button:active,
-.tool-buttons button:hover,.tool-buttons button:active,
-.search-bar-button:hover,.search-bar-button:active,
-.notif-button:hover,.notif-button:active{
+.main-buttons button:hover, .tool-buttons button:hover,
+.search-bar-button:hover,.notif-button:hover{
     background-color: var(--dark-red);
+    fill: var(--light-color);
+    cursor: pointer;
+}
+ .main-buttons button:active, .tool-buttons button:active,
+ .search-bar-button:active,.notif-button:active{
+    background-color: var(--button-active-red);
     fill: var(--light-color);
     cursor: pointer;
 }
@@ -199,6 +204,17 @@
     background-color: var(--dark-green);
     color: var(--light-color);
     font-weight: bold;
+}
+.new-post-button:hover,.upload-post-button:hover, .share-post-button:hover{
+    color: var(--light-color);
+    background-color: var(--dark-red);
+    cursor: pointer;
+}
+.new-post-button:active,.upload-post-button:active, .share-post-button:active{
+    color: var(--light-color);
+    background-color: var(--button-active-red);
+    cursor: pointer;
+    
 }
 .body{
     background-color: var(--light-green);
