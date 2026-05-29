@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 :root{
     --light-color: #F6F3EB;
@@ -10,8 +10,10 @@
     --dark-red: #7F2020;
     --profile-background-color: #9b1887;
     --profile-image-color: #098109;
-    --button-gap: 10px;
-    --button-font-size: 1em;
+    --sidebar-button-gap: 10px;
+    --sidebar-button-font-size: 1em;
+    --post-button-height: 1.5em;
+    --post-button-font-size: 0.8em;
 }
 .grid-container{
     display: grid;
@@ -42,17 +44,17 @@
 }
 .main-buttons{
     display: grid;
-    gap: var(--button-gap);
+    gap: var(--sidebar-button-gap);
     padding-top: 40px;
 }
 .tool-buttons{
     display: grid;
-    gap: var(--button-gap);
+    gap: var(--sidebar-button-gap);
     padding-top: 40px;
     
 }
 .main-buttons button,.tool-buttons button{
-    font-size: var(--button-font-size);
+    font-size: var(--sidebar-button-font-size);
     font-weight: bold;
     color: var(--light-color);
     text-align: left;
@@ -72,8 +74,8 @@
 }
 .main-buttons button>svg,
 .tool-buttons button>svg{
-    height: var(--button-font-size);
-    width: var(--button-font-size);
+    height: var(--sidebar-button-font-size);
+    width: var(--sidebar-button-font-size);
     fill: var(--light-color);
     padding-right: 10px;
     vertical-align:text-bottom;
@@ -184,8 +186,20 @@
     font-size: 1.4em;
 }
 .posting-buttons{
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-content: center;
+}
+.new-post-button,.upload-post-button, .share-post-button{
+    height: var(--post-button-height);
+    font-size: var(--post-button-font-size);
+    border: none;
+    border-radius: 15px;
+    background-color: var(--dark-green);
+    color: var(--light-color);
+    font-weight: bold;
 }
 .body{
- background-color: var(--light-green);
+    background-color: var(--light-green);
 }
