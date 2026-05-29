@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 :root{
     --light-color: #F6F3EB;
@@ -240,7 +240,7 @@
     border-left: 7px solid var(--dark-red);
     display: grid;
     grid-template-rows: 40px 1fr 40px;
-    grid-template-columns: 20px 1fr 30px 30px 30px;
+    grid-template-columns: 20px 1fr 30px 30px 30px 20px;
     gap: 2px;
 }
 .project-name{
@@ -252,6 +252,18 @@
     color: var(--light-font);
     grid-column: 2/5;
 }
+.project-section div svg{
+    width: 15px;
+    place-self: center;
+}
+.favourite-post, .bookmark-post,.share-post{
+    height: 25px;
+    width: 25px;
+    background-color: var(--light-color);
+    border: none;
+    display: grid;
+    border-radius: 5px;
+}
 .favourite-post{
     grid-column: 3/4;
     grid-row: 3/4;
@@ -259,11 +271,19 @@
 .bookmark-post{
     grid-column: 4/5;
     grid-row: 3/4;
-
 }
 .share-post{
     grid-column: 5/6;
     grid-row: 3/4;
+
+}
+.favourite-post:hover, .bookmark-post:hover,.share-post:hover{
+    background-color: var(--dark-red);
+    cursor: pointer;
+    fill: var(--light-color);
+}
+.favourite-post:active, .bookmark-post:active,.share-post:active{
+    background-color: var(--button-active-red);
 
 }
 .announcements{
