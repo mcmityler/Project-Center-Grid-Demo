@@ -27,3 +27,8 @@ Profile Image SVG: https://www.svgrepo.com/svg/535566/person-wave
 Favorite Post Button SVG: https://www.svgrepo.com/svg/535661/star
 Bookmark Post Button SVG: https://www.svgrepo.com/svg/535225/bookmark-plus
 Share Post Button SVG: https://www.svgrepo.com/svg/535620/share-nodes
+
+Chef-guy profile picture SVG: https://www.svgrepo.com/svg/533810/chef-man-cap
+Swim profile picture SVG: https://www.svgrepo.com/svg/530596/diving-goggles
+beaker svg: https://www.svgrepo.com/svg/530532/beaker
+Science SVG: https://www.svgrepo.com/svg/530661/genetic-data
