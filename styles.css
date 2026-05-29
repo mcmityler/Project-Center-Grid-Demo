@@ -68,14 +68,11 @@
 .main-buttons button:hover, .tool-buttons button:hover,
 .search-bar-button:hover,.notif-button:hover{
     background-color: var(--dark-red);
-    fill: var(--light-color);
     cursor: pointer;
 }
  .main-buttons button:active, .tool-buttons button:active,
  .search-bar-button:active,.notif-button:active{
     background-color: var(--button-active-red);
-    fill: var(--light-color);
-    cursor: pointer;
 }
 .main-buttons button>svg,
 .tool-buttons button>svg{
@@ -206,14 +203,13 @@
     font-weight: bold;
 }
 .new-post-button:hover,.upload-post-button:hover, .share-post-button:hover{
-    color: var(--light-color);
+    
     background-color: var(--dark-red);
     cursor: pointer;
 }
 .new-post-button:active,.upload-post-button:active, .share-post-button:active{
-    color: var(--light-color);
+
     background-color: var(--button-active-red);
-    cursor: pointer;
     
 }
 .body{
