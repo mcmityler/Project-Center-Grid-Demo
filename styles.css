@@ -13,6 +13,7 @@
     --button-active-red: #4b1414;
     --profile-background-color: #9b1887;
     --profile-image-color: #098109;
+    --border-radius-div: 5px;
     --sidebar-button-gap: 10px;
     --sidebar-button-font-size: 1em;
     --post-button-height: 2.2em;
@@ -113,7 +114,7 @@
     border: none;
     background-color: var(--light-color);
     height: 25px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-div);
 }
 .search-bar-button svg{
     height: 15px;
@@ -132,7 +133,7 @@
     background-color: var(--light-color);
     border: none;
     height: 25px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-div);
     display: grid;
     place-items: center;
 }
@@ -236,7 +237,7 @@
 .project-section div{
     background-color: var(--light-color);
     margin: 10px 20px 20px 20px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-div);
     border-left: 7px solid var(--dark-red);
     display: grid;
     grid-template-rows: 40px 1fr 40px;
@@ -262,7 +263,7 @@
     background-color: var(--light-color);
     border: none;
     display: grid;
-    border-radius: 5px;
+    border-radius: var(--border-radius-div);
 }
 .favourite-post{
     grid-column: 3/4;
@@ -286,8 +287,49 @@
     background-color: var(--button-active-red);
 
 }
-.announcements{
-
+.announcement-section{
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 10px;
+}
+.announcement-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    align-self: flex-end;
+    padding-left: 15px;
+}
+.announcement-updates{
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--light-color);
+    margin: 5px 15px;
+    border-radius: var(--border-radius-div);
+}
+.announcement-updates h3{
+    font-size: 0.9em;
+}
+.announcement-updates p{
+    font-size: 0.8em;
+    color: var(--light-font);
+}
+.site-maintenance{
+    width: 175px;
+    justify-self: center;
+    align-self: flex-end;
+    border-bottom: 1px solid var(--light-green);
+    padding-bottom: 10px;
+}
+.community-share{
+    width: 175px;
+    place-self: center;
+    border-bottom: 1px solid var(--light-green);
+    padding-bottom: 10px;
+}
+.pizza-party{
+    width: 175px;
+    align-self: flex-start;
+    justify-self: center;
 }
 .trending{
 
