@@ -1,9 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
-    overflow: auto;
+    /* box-sizing: border-box; */
+    outline: 1px solid red;
 }
 :root{
     --light-color: #F6F3EB;
@@ -252,6 +251,20 @@
 .project-description{
     color: var(--light-font);
     grid-column: 2/5;
+}
+.favourite-post{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.bookmark-post{
+    grid-column: 4/5;
+    grid-row: 3/4;
+
+}
+.share-post{
+    grid-column: 5/6;
+    grid-row: 3/4;
+
 }
 .announcements{
 
