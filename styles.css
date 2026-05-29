@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 1px solid red;
+    box-sizing: border-box;
 }
 :root{
     --light-color: #F6F3EB;
@@ -77,7 +78,7 @@
 .main-buttons button>svg,
 .tool-buttons button>svg{
     height: var(--sidebar-button-font-size);
-    width: var(--sidebar-button-font-size);
+    width: auto;
     fill: var(--light-color);
     padding-right: 10px;
     vertical-align:text-bottom;
@@ -223,17 +224,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr 1fr 1fr;
-    gap: 20px;
-    margin: 20px;
 
 }
 .your-projects{
     grid-column: 1/3;
     align-self: flex-end;
-    padding: 5px 20px;;
+    font-weight: bold;
+    margin: 20px px;
 }
 .project-section div{
     background-color: var(--light-color);
+    margin: 20px;
 }
 .announcements{
 
