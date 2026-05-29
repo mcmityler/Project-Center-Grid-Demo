@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 :root{
     --light-color: #F6F3EB;
@@ -357,8 +357,9 @@
 }
 .trendy-profile{
     display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 30px 20px;
+    grid-template-columns: 60px 1fr 50px;
+    grid-template-rows: 25px 20px;
+
 }
 .pfp-bg{
     grid-row: 1/3;
@@ -368,6 +369,15 @@
     display: grid;
     border-radius: 50px;
 
+}
+.profile-name{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.profile-description{
+    grid-column: 2/3;
+    font-size: 0.75em;
+    color: var(--light-font);
 }
 .pfp-bg svg{
     width: 30px;
