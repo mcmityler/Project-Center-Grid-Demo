@@ -1,14 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
+    overflow: auto;
 }
 :root{
     --light-color: #F6F3EB;
     --light-green: #d9dac8;
     --dark-green: #76886e;
     --dark-red: #7F2020;
+    --light-font: #5a5a5a;
     --button-active-red: #4b1414;
     --profile-background-color: #9b1887;
     --profile-image-color: #098109;
@@ -223,18 +225,33 @@
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
 
 }
 .your-projects{
     grid-column: 1/3;
     align-self: flex-end;
     font-weight: bold;
-    margin: 20px px;
+    margin: 0px 20px;
 }
 .project-section div{
     background-color: var(--light-color);
-    margin: 20px;
+    margin: 10px 20px 20px 20px;
+    border-radius: 5px;
+    border-left: 7px solid var(--dark-red);
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 20px 1fr 30px 30px 30px;
+    gap: 2px;
+}
+.project-name{
+    font-size: 1.2em;
+    grid-column: 2/5;
+    align-self: flex-end;
+}
+.project-description{
+    color: var(--light-font);
+    grid-column: 2/5;
 }
 .announcements{
 
