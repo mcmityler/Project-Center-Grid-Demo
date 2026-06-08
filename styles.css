@@ -1,25 +1,25 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red; 
 }
 :root{
+    --font-grey: #5a5a5a;
     --light-color: #F6F3EB;
     --light-green: #d9dac8;
     --dark-green: #76886e;
     --dark-red: #7F2020;
-    --light-font: #5a5a5a;
-    --button-active-red: #4b1414;
-    --profile-background-color: #9b1887;
-    --profile-image-color: #098109;
-    --border-radius-div: 5px;
-    --sidebar-button-gap: 10px;
-    --sidebar-button-font-size: 1em;
-    --post-button-height: 2.2em;
-    --post-button-font-size: 0.8em;
+    --activated-red: #4b1414;
+
+    --pfp-background-color: #9b1887;
+    --pfp-image-color: #098109;
+
+    --guest-background-1: #008d63;
+    --guest-background-2: #eeffa1;
+    --guest-background-3: #3d000d;
+    --guest-background-4: #ff4800;
 }
-.grid-container{
+
+
+/* .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 150px 1fr;
@@ -179,7 +179,7 @@
 }
 .welcome-message-image-background svg{
     width: 70%;
-    /* centers the image within the background */
+    /* centers the image within the background 
     margin: auto;
     fill: var(--profile-image-color);
 
@@ -396,4 +396,4 @@
 }
 .profile-4 .pfp-bg{
     background-color: #8eb962;
-}
+} */
