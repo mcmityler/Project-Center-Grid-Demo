@@ -269,10 +269,15 @@ body{
     grid-column: 2/3;
     cursor: crosshair;
 }
+.help-navigation{
+    padding-top: 20px;
+}
+.help-navigation ul,
 .main-navigation ul{
     list-style: none;
     padding: 0;
 }
+.help-navigation li,
 .main-navigation li{
     width: 100%;
     margin-top: 10px;
@@ -281,6 +286,7 @@ body{
 aside li:hover{
     margin-left: 10px;
 }
+.help-navigation li button,
 .main-navigation li button{
     width: 100%;
     text-align: left;
@@ -291,9 +297,11 @@ aside li:hover{
     border: none;
     color: var(--light-color)
 }
+.help-navigation li button:hover,
 .main-navigation li button:hover{
     background-color: var(--dark-red);
 }
+.help-navigation li button:active,
 .main-navigation li button:active{
     background-color: var(--activated-red);
 }

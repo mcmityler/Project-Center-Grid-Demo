@@ -20,9 +20,9 @@ History Button icon: https://fontawesome.com/icons/classic/solid/box
 Tasks Button icon: https://fontawesome.com/icons/classic/solid/list-check
 Communities Button icon: https://fontawesome.com/icons/classic/solid/building-user
 
-Settings Button SVG: https://www.svgrepo.com/svg/535498/microchip
-Support Button SVG: https://www.svgrepo.com/svg/535433/head-side
-Privacy Button SVG: https://www.svgrepo.com/svg/535465/key-skeleton
+Settings Button icon: https://fontawesome.com/icons/classic/solid/gear
+Support Button icon: https://fontawesome.com/icons/classic/solid/users-gear
+Privacy Button icon: https://fontawesome.com/icons/classic/solid/lock
 
 Search Button SVG: https://www.svgrepo.com/svg/535575/point-right 
 Notification button SVG: https://www.svgrepo.com/svg/535399/flag
