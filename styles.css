@@ -1,5 +1,5 @@
 *{
-    /* outline: 1px solid red;  */
+    outline: 1px solid red; 
 }
 :root{
     --font-grey: #5a5a5a;
@@ -21,6 +21,9 @@
 
 .lighten-text{
     color: var(--font-grey)
+}
+.pointer-cursor{
+    cursor: pointer;
 }
 body{
     min-height: 100vh;
@@ -48,7 +51,7 @@ body{
     grid-row: 1/-1;
     grid-column: 1/2;
     background-color: var(--dark-green);
-
+    display: grid;
 }
 .main-container{
 
@@ -186,7 +189,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 10fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 0px 10px;
 }
 .welcome-profile-pic{
     grid-row: 1/-1;
@@ -205,11 +208,13 @@ body{
 }
 .welcome-hi{
     align-self: flex-end;
+
 }
 .welcome-name{
 
     font-size: 1.2em;
     font-weight: 700;
+    align-self: flex-start;
 }
 
 .posting-container{
@@ -238,8 +243,11 @@ body{
 .posting-container button:active{
     background-color: var(--activated-red);
     box-shadow: 1px 1px 3px var(--dark-green);
-
 }
+
+/* sidebar/navigation sections */
+
+
 /* .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
