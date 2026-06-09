@@ -1,5 +1,5 @@
 *{
-    outline: 1px solid red; 
+    /* outline: 1px solid red;  */
 }
 :root{
     --font-grey: #5a5a5a;
@@ -184,7 +184,7 @@ body{
 
 .welcome-container{
     display: grid;
-    grid-template-columns: 2.5fr 10fr;
+    grid-template-columns: 2fr 10fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
@@ -223,6 +223,22 @@ body{
     height: 30px;
     border-radius: 15px;
     border: none;
+    font-weight: 600;
+    color: var(--light-color);
+    background-color: var(--dark-green);
+    box-shadow: none;
+    transition:  all 0.3s ease-in-out;
+
+}
+.posting-container button:hover{
+    background-color: var(--dark-red);
+    box-shadow: 1px 3px 3px var(--dark-green);
+
+}
+.posting-container button:active{
+    background-color: var(--activated-red);
+    box-shadow: 1px 1px 3px var(--dark-green);
+
 }
 /* .grid-container{
     display: grid;
