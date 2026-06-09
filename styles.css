@@ -200,7 +200,7 @@ body{
     place-items: center;
 }
 .welcome-profile-pic i{
-    color: var(--light-color);
+    color: var(--pfp-image-color);
     transform: scale(2.5);
 }
 .welcome-hi{
