@@ -17,8 +17,132 @@
     --guest-background-3: #3d000d;
     --guest-background-4: #ff4800;
 }
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    min-height: 100vh;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.grid-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px 1fr;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: minmax(450px, 1fr) minmax(250px, 350px);
+    grid-template-rows: 1fr 1fr;
+}
+.sidebar-container{
+    grid-row: 1/-1;
+    grid-column: 1/2;
+}
+.main-container{
+
+}
+
+.searchbar-container{
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.search-button{
+    grid-row: 2/3;
+    height: 30px;
+    width: 30px;
+    justify-self: end;
+    align-self: center;
+    display: grid;
+    border: none;
+    background-color: transparent;
+}
+.search-button:hover i{
+    transform: translateY(-3px);
+    text-shadow: 2px 2px 2px var(--font-grey);
+}
+.search-button:active i{
+    transform: translateY(-2px);
+    text-shadow: 1px 2px 1px var(--font-grey);
+}
+.search-button i{
+    transition: all 0.3s ease;
+    place-self: center;
+}
+/* APPLE LIKE INPUT */
+.search-input-div{
+    max-width: 700px;
+    min-width: 400px;
+    position: relative;
+    grid-row: 2/3;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-right: 100px;
+}
+.search-input-div input{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.1em;
+    outline: none;
+
+}
+.search-input-div label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 10px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.4s ease;
+
+}
+/* the second one targets if the input has something different than the placeholder of "" this
+    is done so that when there is an input it moves up and works for inputs that aren't required */
+.search-input-div input:focus ~ label,
+.search-input-div input:not(:placeholder-shown) ~ label{
+    transform: translateY(-30px);
+    font-size: 0.8em;
+}
+
+.lighten-text{
+    color: var(--font-grey)
+}
+.notif-button{
+    background-color: transparent;
+}
+.notif-button i{
+    transition: text-shadow 0.3s ease;
+}
+.notif-button:hover i  {
+    text-shadow: 2px 2px 5px var(--font-grey);
+	animation: shake 0.5s linear infinite;
+}
+.notif-button:active i  {
+    color: var(--font-grey);
+}
 
 
+@keyframes shake {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(15deg);
+	}
+	75% {
+		transform: rotate(-15deg);
+	}
+    100% {
+		transform: rotate(0deg);
+	}
+}
 /* .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr;

@@ -7,6 +7,10 @@ References:
 
 Color Pallette for project: https://colorhunt.co/palette/7f2020869b7ec9caacf6f3eb 
 
+Arimo Font: https://fonts.google.com/specimen/Arimo
+
+Profile picture main: https://fontawesome.com/icons/classic/solid/person-hiking
+
 SVG LOGOS: 
 Logo/Title SVG: https://www.svgrepo.com/svg/535140/aperture
 Home Button SVG: https://www.svgrepo.com/svg/535256/castle
