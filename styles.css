@@ -58,6 +58,9 @@ body{
 .main-container{
     background-color: var(--light-green);
     z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(450px, 1fr) minmax(250px, 400px);
+    grid-template-rows: 400px 400px 1fr;
 }
 
 
@@ -304,6 +307,25 @@ aside li:hover{
 .help-navigation li button:active,
 .main-navigation li button:active{
     background-color: var(--activated-red);
+}
+
+.project-container{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); 
+    grid-template-rows: 40px 1fr 1fr 1fr;
+}
+.your-projects{
+    grid-column: 1/-1;
+}
+.announcement-container{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.trending-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 /* .grid-container{
