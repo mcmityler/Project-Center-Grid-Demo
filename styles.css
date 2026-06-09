@@ -48,9 +48,10 @@ body{
 
 }
 
+
 .searchbar-container{
     display: grid;
-    grid-template-columns: 3fr 10fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
@@ -175,6 +176,35 @@ body{
 	}
 }
 
+.welcome-container{
+    display: grid;
+    grid-template-columns: 2.5fr 10fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.welcome-profile-pic{
+    grid-row: 1/-1;
+    width: 70px;
+    height: 70px;
+    background-color: var(--pfp-background-color);
+    border-radius: 100%;
+    justify-self: flex-end;
+    align-self: center;
+    display: grid;
+    place-items: center;
+}
+.welcome-profile-pic i{
+    color: var(--light-color);
+    transform: scale(2.5);
+}
+.welcome-hi{
+    align-self: flex-end;
+}
+.welcome-name{
+
+    font-size: 1.2em;
+    font-weight: 700;
+}
 
 /* .grid-container{
     display: grid;
