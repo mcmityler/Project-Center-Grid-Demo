@@ -28,6 +28,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    background-color: var(--light-green);
 }
 .grid-container{
     min-height: 100vh;
@@ -39,10 +40,15 @@ body{
     display: grid;
     grid-template-columns: minmax(450px, 1fr) minmax(250px, 400px);
     grid-template-rows: 1fr 1fr;
+    background-color: var(--light-color);
+    box-shadow: 7px 10px 15px var(--dark-green);
+
 }
 .sidebar-container{
     grid-row: 1/-1;
     grid-column: 1/2;
+    background-color: var(--dark-green);
+
 }
 .main-container{
 
@@ -206,6 +212,18 @@ body{
     font-weight: 700;
 }
 
+.posting-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+.posting-container button{
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+}
 /* .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
