@@ -52,6 +52,8 @@ body{
     grid-column: 1/2;
     background-color: var(--dark-green);
     display: grid;
+    grid-template-rows: 150px 2fr 3fr;
+
 }
 .main-container{
 
@@ -246,7 +248,26 @@ body{
 }
 
 /* sidebar/navigation sections */
-
+.website-logo{
+    display: grid;
+    grid-template-columns:  85px 1fr;
+    grid-template-rows: 150px;
+    align-items: center;
+    gap: 5px;
+}
+.website-logo svg{
+    width: 65px;
+    fill: var(--light-color);
+    justify-self: flex-end;
+    cursor: crosshair;
+}
+.website-title{
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--light-color);
+    grid-column: 2/3;
+    cursor: crosshair;
+}
 
 /* .grid-container{
     display: grid;
