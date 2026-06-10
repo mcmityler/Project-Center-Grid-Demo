@@ -1,5 +1,5 @@
 *{
-    outline: 1px solid red; 
+    /* outline: 1px solid red;  */
 }
 :root{
     --font-grey: #5a5a5a;
@@ -60,7 +60,7 @@ body{
     background-color: var(--light-green);
     z-index: 2;
     display: grid;
-    grid-template-columns: minmax(450px, 1fr) minmax(250px, 400px);
+    grid-template-columns: minmax(450px, 1fr) minmax(250px, 300px);
     grid-template-rows: 400px 400px 1fr;
 }
 
@@ -290,6 +290,9 @@ body{
 aside li:hover{
     margin-left: 10px;
 }
+aside li:active{
+    margin-left: 5px;
+}
 .help-navigation li button,
 .main-navigation li button{
     width: 100%;
@@ -374,11 +377,42 @@ aside li:hover{
 .announcement-container{
     grid-column: 2/3;
     grid-row: 1/2;
+    min-width: 200px;
+    max-width: 250px;
+    margin-top: 40px;
+    display:grid;
+    grid-template-rows: 40px 1fr;
+}
+.announcement-title{
+   font-weight: 700;
+
+}
+.announcement-updates{
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+.announcement-updates h3{
+    font-size: 0.9em;
+}
+.announcement-updates p{
+    font-size: 0.8em;
+    color: var(--font-grey);
+    padding-bottom: 5px;
+    border-bottom:  1px solid var(--light-green);
+
+}
+.pizza-party p{
+    border-bottom: none;
 }
 .trending-container{
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 
 /* .grid-container{
     display: grid;
