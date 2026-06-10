@@ -33,7 +33,7 @@ star
 Bookmark Post Button icon: https://fontawesome.com/icons/classic/solid/book-bookmarkbookmark-plus
 Share Post Button icon: https://fontawesome.com/icons/classic/solid/share
 
-Chef-guy profile picture SVG: https://www.svgrepo.com/svg/533810/chef-man-cap
-Swim profile picture SVG: https://www.svgrepo.com/svg/530596/diving-goggles
-beaker svg: https://www.svgrepo.com/svg/530532/beaker
-Science SVG: https://www.svgrepo.com/svg/530661/genetic-data
+Astronaut profile picture icon: https://fontawesome.com/icons/classic/solid/user-astronaut
+Bird/Dove profile picture icon: https://fontawesome.com/icons/classic/solid/dove
+Dragon profile picture icon: https://fontawesome.com/icons/classic/solid/dragon
+Agent profile picture icon: https://fontawesome.com/icons/classic/solid/user-secret
