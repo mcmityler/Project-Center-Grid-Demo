@@ -1,5 +1,5 @@
 *{
-    /* outline: 1px solid red;  */
+    outline: 1px solid red; 
 }
 :root{
     --font-grey: #5a5a5a;
@@ -15,8 +15,12 @@
 
     --guest-background-1: #008d63;
     --guest-background-2: #eeffa1;
-    --guest-background-3: #3d000d;
+    --guest-background-3: #d44967;
     --guest-background-4: #ff4800;
+    --guest-pfp-1: #c266ca;
+    --guest-pfp-2: #0020af;
+    --guest-pfp-3: #104913;
+    --guest-pfp-4: #080222;
 }
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -32,6 +36,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    background-color: var(--light-green);
 }
 .grid-container{
     min-height: 100vh;
@@ -383,7 +388,7 @@ aside li:active{
     display:grid;
     grid-template-rows: 40px 1fr;
 }
-.announcement-title{
+.announcement-title, .trending-title{
    font-weight: 700;
 
 }
@@ -412,6 +417,67 @@ aside li:active{
 .trending-container{
     grid-column: 2/3;
     grid-row: 2/3;
-    box-shadow: 5px 5px 7px var(--dark-green);
-
+    min-width: 200px;
+    max-width: 250px;
+    margin: 40px 0;
+    display: grid;
+    grid-template-rows: 40px 1fr;
 } 
+.trending-profiles{
+    box-shadow: 5px 5px 7px var(--dark-green);
+    border-radius: 10px;
+    background-color: var(--light-color);
+    display: grid;
+    padding: 10px
+}
+.trendy-profile{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+}
+.pfp-bg{
+    grid-row: 1/-1;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+.profile-name{
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    align-self: flex-end;
+    font-size: 0.9em;
+}
+.profile-description{
+    grid-row: 2/3;
+    grid-column: 2/-1;
+    font-size: 0.8em;
+}
+.profile-1 .pfp-bg{
+    background-color: var(--guest-background-1);
+}
+.profile-1 .pfp-bg i{
+    color: var(--guest-pfp-1);
+}
+.profile-2 .pfp-bg{
+    background-color: var(--guest-background-2);
+}
+.profile-2 .pfp-bg i{
+    color: var(--guest-pfp-2);
+}
+.profile-3 .pfp-bg{
+    background-color: var(--guest-background-3);
+}
+.profile-3 .pfp-bg i{
+    color: var(--guest-pfp-3);
+}
+.profile-4 .pfp-bg{
+    background-color: var(--guest-background-4);
+}
+.profile-4 .pfp-bg i{
+    color: var(--guest-pfp-4);
+}
